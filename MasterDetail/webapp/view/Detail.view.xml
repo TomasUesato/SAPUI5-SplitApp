@@ -1,0 +1,28 @@
+<mvc:View 
+    controllerName="MasterDetail.MasterDetail.controller.Detail" 
+    xmlns:mvc="sap.ui.core.mvc" 
+    displayBlock="true" 
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form">
+
+	<Page title="Detail" 
+        backgroundDesign="Solid" 
+        class="sapUiStdPage">
+
+		<content>
+           <f:SimpleForm title="Product Details">
+                <f:content>
+                    <Label text= "Codigo"/>
+                    <Text text="{productoSel>/codigo_producto}"/>
+                    <Label text= "Descuento"/>
+                    <Text text="{productoSel>/desc_producto}"/>
+                    <Label text= "Origen"/>
+                    <Text text="{productoSel>/origen}"/>
+                </f:content>
+            </f:SimpleForm>
+            
+        </content>
+	</Page>
+			
+</mvc:View>

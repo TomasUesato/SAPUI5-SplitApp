@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run MasterDetail-MasterDetail",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/masterdetail-approuter/node_modules/@sap/html5-repo-mock/index.js",
+      "args": [
+        "--standalone",
+        "/MasterDetailMasterDetail/index.html",
+        "--ui5",
+        "{\"version\":\"1.84.9\"}"
+      ],
+      "cwd": "${workspaceFolder}/MasterDetail",
+      "env": {
+        "PORT": "6004",
+        "MOCK_LOOKUP_DIRS": "[\"webapp\"]",
+        "run.config": "{\"handlerId\":\"ui5_run_config_handler_id\",\"runnableId\":\"/home/user/projects/MasterDetail/MasterDetail\"}"
+      },
+      "envFile": "${workspaceFolder}/MasterDetail/.env1",
+      "preLaunchTask": "Build MasterDetail"
+    }
+  ]
+}

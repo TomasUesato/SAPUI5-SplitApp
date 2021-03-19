@@ -1,0 +1,21 @@
+<mvc:View 
+    controllerName="MasterDetail.MasterDetail.controller.Master" 
+    xmlns:mvc="sap.ui.core.mvc" 
+    displayBlock="true" 
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout">
+
+	<Page id="page" title="Master" 
+        backgroundDesign="List" 
+        class="sapUiStdPage">
+
+		<content>
+            <List mode="SingleSelectMaster" selectionChange="onListItemPress" items="{productosModel>/value}">
+                <items>
+                    <StandardListItem title="{productosModel>codigo_producto}" type="Active" press="onListItemPress"/>
+                </items>
+            </List>
+        </content>
+	</Page>
+			
+</mvc:View>
